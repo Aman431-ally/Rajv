@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rajv ❤️ Aman | 10 Months of Us</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,serif;background:#09020b;color:#fff;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% -10%,#ff4f9130,transparent 45%);z-index:-4}
+.bg{position:fixed;inset:0;background:radial-gradient(circle at 15% 20%,#ff3d8140 0,transparent 28%),radial-gradient(circle at 85% 80%,#7c2cff35 0,transparent 30%),linear-gradient(135deg,#09020b,#19051c 50%,#07030b);z-index:-5}
+.stars{position:fixed;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px;opacity:.12;z-index:-3;animation:move 18s linear infinite}
+@keyframes move{to{background-position:100px 100px}}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:55px 18px;position:relative;overflow:hidden}
+.card{max-width:900px;width:100%;padding:45px 28px;text-align:center;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.17);border-radius:30px;backdrop-filter:blur(14px);box-shadow:0 0 55px rgba(255,50,130,.16)}
+h1{font-size:clamp(45px,11vw,100px);line-height:1.02;background:linear-gradient(90deg,#fff,#ff8bb8,#ffd1e1,#fff);-webkit-background-clip:text;color:transparent;animation:shine 3s infinite}
+@keyframes shine{50%{filter:drop-shadow(0 0 18px #ff4f91)}}
+h2{font-size:clamp(28px,6vw,52px);margin-bottom:20px;color:#ffd0e1}
+p{font-family:Arial,sans-serif;line-height:1.8;font-size:18px;color:#f8eaf0}
+.names{font-size:25px;margin:20px 0;color:#ff9fc4}
+.small{font-size:14px;color:#caa9b7;font-family:Arial}
+.btn{display:inline-block;margin:18px 7px;padding:13px 22px;border-radius:99px;border:1px solid #ff91b8;background:#ff3d81;color:white;text-decoration:none;font-family:Arial;font-weight:bold;box-shadow:0 0 25px #ff3d8144;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 32px #ff3d8177}
+.music-fab{position:fixed;right:18px;bottom:18px;z-index:50;width:58px;height:58px;border:1px solid #ff91b8;border-radius:50%;background:#ff3d81;color:white;font-size:23px;box-shadow:0 0 25px #ff3d8166;cursor:pointer}
+.music-fab.playing{animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.heart{position:absolute;font-size:22px;animation:float 7s linear infinite;opacity:.75}
+@keyframes float{from{transform:translateY(110vh) rotate(0);opacity:0}20%{opacity:.8}to{transform:translateY(-15vh) rotate(360deg);opacity:0}}
+.scroll{margin-top:22px;color:#ffd0e1;font-family:Arial;font-size:13px;opacity:.75;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.35;transform:translateY(5px)}}
+.timeline{display:grid;gap:18px;margin-top:25px;text-align:left}
+.item{padding:20px;border-left:3px solid #ff5794;background:#ffffff08;border-radius:0 18px 18px 0}
+.item b{color:#ff9fc4;font-family:Arial}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px;margin-top:25px}
+.reason{padding:24px;border-radius:22px;background:linear-gradient(145deg,#ffffff10,#ff3d8110);border:1px solid #ffffff1c;transition:.3s}
+.reason:hover{transform:translateY(-7px);box-shadow:0 0 25px #ff3d8133}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:25px}
+.gallery figure{margin:0;overflow:hidden;border-radius:22px;background:#0005;border:1px solid #ffffff22;box-shadow:0 8px 30px #0008}
+.gallery img{width:100%;height:340px;display:block;object-fit:cover;transition:.45s}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{padding:10px;font-family:Arial;color:#ffd0e1;font-size:13px}
+.video-wrap{margin-top:25px}
+.video-wrap video{width:100%;max-height:650px;border-radius:22px;border:1px solid #ffffff22;box-shadow:0 8px 30px #0008}
+.gift{font-size:100px;cursor:pointer;animation:bounce 1.8s infinite}
+@keyframes bounce{50%{transform:translateY(-14px)}}
+#secret{display:none;margin:20px auto 0;max-width:650px}
+audio{width:min(90%,400px);margin-top:15px}
+.confetti{position:fixed;width:8px;height:14px;top:-20px;z-index:60;animation:fall 3s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+footer{text-align:center;padding:35px;color:#dcb6c6;font-family:Arial}
+.quote{font-size:25px!important;color:#ffd0e1!important;font-style:italic;margin-top:20px}
+@media(max-width:600px){section{padding:38px 13px}.card{padding:35px 18px;border-radius:24px}.gallery img{height:380px}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="stars"></div><div id="hearts"></div>
+
+<button class="music-fab" id="musicBtn" onclick="toggleMusic()" aria-label="Play music">🎵</button>
+<audio id="music" loop preload="auto"><source src="sang-rahiyo.mp3" type="audio/mpeg"></audio>
+
+<section>
+<div class="card">
+<div class="small">A little website made with a very big feeling ❤️</div>
+<h1>Happy Anniversary</h1>
+<div class="names">Rajv ❤️ Aman</div>
+<p>10 months of memories, smiles, silly moments, little fights, and a whole lot of love.</p>
+<a class="btn" href="#letter">Open My Letter 💌</a>
+<a class="btn" href="#memories">Our Memories 📸</a>
+<div class="scroll">↓ Scroll slowly… there are memories waiting for you ↓</div>
+</div>
+</section>
+
+<section id="letter">
+<div class="card">
+<h2>To My Favourite Person 🌹</h2>
+<p>Rajv,</p><br>
+<p>Ten months may sound like just a number, but for me they are ten months filled with moments I never want to forget. You have become one of the most beautiful parts of my everyday life. Thank you for every smile, every conversation, every little moment, and for simply being you.</p><br>
+<p>I don't know what every tomorrow will look like, but I know I want to keep collecting memories with you. More laughs. More adventures. More silly moments. More “us”.</p><br>
+<p><b>Happy Anniversary, my love. ❤️</b><br>Here's to us — and to every beautiful chapter still waiting for us.</p>
+</div>
+</section>
+
+<section id="memories">
+<div class="card">
+<h2>Our Memories 📸</h2>
+<p>Three moments, one story, countless feelings. ❤️</p>
+<div class="gallery">
+<figure><img src="images/photo1.jpg" alt="Our memory 1"><figcaption>One of those moments I want to remember forever. ❤️</figcaption></figure>
+<figure><img src="images/photo2.jpg" alt="Our memory 2"><figcaption>A moment that feels like a beautiful movie scene. 🌹</figcaption></figure>
+<figure><img src="images/photo3.jpg" alt="Our memory 3"><figcaption>Just us, making another little memory. 💕</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>A Memory in Motion 🎥</h2>
+<p>Press play and relive this little moment. ❤️</p>
+<div class="video-wrap"><video controls playsinline preload="metadata"><source src="our-video.mp4" type="video/mp4">Your browser does not support video playback.</video></div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Our Little Journey ✨</h2>
+<div class="timeline">
+<div class="item"><b>Month 1 💕</b><br>Where our story started becoming something special.</div>
+<div class="item"><b>Month 5 🌙</b><br>More comfort, more memories, and a little more “us”.</div>
+<div class="item"><b>Month 10 ❤️</b><br>Still here, still choosing each other, still making memories.</div>
+<div class="item"><b>Next Chapters ♾️</b><br>More moments to create, one day at a time.</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Reasons I Love You 🥰</h2>
+<div class="reasons">
+<div class="reason">Your smile makes ordinary days feel special. 💗</div>
+<div class="reason">You make me feel understood. 🌸</div>
+<div class="reason">Even our silly moments become memories. 😂</div>
+<div class="reason">You are simply, wonderfully you. ✨</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>A Little Surprise 🎁</h2>
+<p>Tap the gift...</p>
+<div class="gift" onclick="openGift()">🎁</div>
+<div id="secret">
+<p>💖 Surprise! 💖</p><br>
+<p>Rajv, if I could give you one thing, it would be the ability to see yourself through my eyes — so you could see just how special you are to me.</p><br>
+<p><b>Happy 10 Months, my love. ❤️</b></p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>One Last Thing... 🌙</h2>
+<p>Tap 🎵 to start our song, or use the player below.</p>
+<button class="btn" onclick="toggleMusic()">Play / Pause Sang Rahiyo 🎵</button><br>
+<audio controls><source src="sang-rahiyo.mp3" type="audio/mpeg"></audio>
+<p class="quote">“More laughs. More adventures. More us.” ❤️</p>
+<br><p>Rajv ❤️ Aman</p>
+<p style="margin-top:20px;color:#ff9fc4">10 months down. So many memories to go. ♾️</p>
+</div>
+</section>
+
+<footer>Made with ❤️ for Rajv • 10 Months of Us</footer>
+
+<script>
+const emojis=["❤️","💗","💕","✨","🌹","💖"];
+const box=document.getElementById("hearts");
+for(let i=0;i<32;i++){
+ const s=document.createElement("span");s.className="heart";
+ s.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+ s.style.left=Math.random()*100+"vw";
+ s.style.animationDelay=Math.random()*7+"s";
+ s.style.fontSize=(14+Math.random()*22)+"px";
+ box.appendChild(s);
+}
+const music=document.getElementById("music");
+const musicBtn=document.getElementById("musicBtn");
+function toggleMusic(){
+ if(music.paused){music.play().then(()=>{musicBtn.classList.add("playing");musicBtn.textContent="⏸️"}).catch(()=>{});}
+ else{music.pause();musicBtn.classList.remove("playing");musicBtn.textContent="🎵";}
+}
+music.addEventListener("ended",()=>{musicBtn.classList.remove("playing");musicBtn.textContent="🎵"});
+function openGift(){
+ document.getElementById("secret").style.display="block";
+ for(let i=0;i<80;i++){
+  const c=document.createElement("div");c.className="confetti";
+  c.textContent=["❤️","💗","✨","💕","🌹"][Math.floor(Math.random()*5)];
+  c.style.left=Math.random()*100+"vw";
+  c.style.animationDelay=Math.random()*1.5+"s";
+  document.body.appendChild(c);
+  setTimeout(()=>c.remove(),4500);
+ }
+}
+</script>
+</body>
+</html>
